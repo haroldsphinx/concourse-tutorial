@@ -61,3 +61,4 @@ endif
 reload:
 	kubectl -n sre run prom-reloader --rm -ti --image=centos --restart=Never -- curl -XPOST http://prometheus.sre.svc.cluster.local:9090/-/reload
 
+
